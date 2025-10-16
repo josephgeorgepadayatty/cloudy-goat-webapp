@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cloudy-goat-webapp/static/css/main.2171b44f.css",
+    "main.js": "/cloudy-goat-webapp/static/js/main.14d095f2.js",
+    "static/js/453.4ddbe320.chunk.js": "/cloudy-goat-webapp/static/js/453.4ddbe320.chunk.js",
+    "index.html": "/cloudy-goat-webapp/index.html",
+    "main.2171b44f.css.map": "/cloudy-goat-webapp/static/css/main.2171b44f.css.map",
+    "main.14d095f2.js.map": "/cloudy-goat-webapp/static/js/main.14d095f2.js.map",
+    "453.4ddbe320.chunk.js.map": "/cloudy-goat-webapp/static/js/453.4ddbe320.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2171b44f.css",
+    "static/js/main.14d095f2.js"
+  ]
+}
