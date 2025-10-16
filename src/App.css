@@ -1,0 +1,94 @@
+/* General styling */
+.app-container {
+  font-family: 'Arial', sans-serif;
+  background: #e0f2ff; /* Soft blue background */
+  color: #103262; /* Dark blue text */
+  min-height: 100vh;
+  padding: 20px;
+  user-select: none;
+  cursor: url('https://cdn.cutecursors.com/cdn-changecursor/packs/goat-fortnite-cursor/arrow.png') 4 4, auto;
+}
+
+.app-title {
+  text-align: center;
+  color: #115293; /* Blue, goat theme accent */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  background: #b3d4fc; /* Light blue */
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #103262;
+  cursor: url('https://cdn.cutecursors.com/cdn-changecursor/packs/goat-fortnite-cursor/hand.png') 4 4, pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+  outline-offset: 3px;
+}
+
+.tab-button:hover,
+.tab-button:focus {
+  background: #9bc6fa;
+  outline: none;
+}
+
+.tab-button.active {
+  background: #115293;
+  color: white;
+}
+
+.tab-logo {
+  height: 25px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.tab-content {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(17, 82, 147, 0.3);
+  /* fadein animation handled by Framer Motion */
+}
+
+.tab-panel h2 {
+  color: #115293;
+  margin-bottom: 20px;
+  text-align: center;
+  user-select: text;
+}
+
+.goat-pic {
+  display: block;
+  max-width: 300px;
+  margin: 10px auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(17, 82, 147, 0.4);
+  user-select: none;
+}
+
+.goat-gif {
+  display: block;
+  max-width: 150px;
+  margin: 10px auto;
+  user-select: none;
+}
+
+body, .app-container {
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=119335),auto;
+}
