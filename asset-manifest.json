@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/cloudy-goat-webapp/static/css/main.491ab2a3.css",
-    "main.js": "/cloudy-goat-webapp/static/js/main.db05f95f.js",
+    "main.css": "/cloudy-goat-webapp/static/css/main.8f96d246.css",
+    "main.js": "/cloudy-goat-webapp/static/js/main.10150de9.js",
     "static/js/453.4ddbe320.chunk.js": "/cloudy-goat-webapp/static/js/453.4ddbe320.chunk.js",
     "static/media/Mulesoft Video.mp4": "/cloudy-goat-webapp/static/media/Mulesoft Video.9aa5482be9f7ab0b6e8b.mp4",
     "static/media/Agentforce Video.mp4": "/cloudy-goat-webapp/static/media/Agentforce Video.87bd9ba184f028d1c5aa.mp4",
     "static/media/Devops Video.mp4": "/cloudy-goat-webapp/static/media/Devops Video.8add952c205f0a90af68.mp4",
     "static/media/mainLogo.png": "/cloudy-goat-webapp/static/media/mainLogo.1ed5234f1b1406aae3fd.png",
+    "static/media/qr.png": "/cloudy-goat-webapp/static/media/qr.daf5bdeba66b7096a41b.png",
     "index.html": "/cloudy-goat-webapp/index.html",
-    "main.491ab2a3.css.map": "/cloudy-goat-webapp/static/css/main.491ab2a3.css.map",
-    "main.db05f95f.js.map": "/cloudy-goat-webapp/static/js/main.db05f95f.js.map",
+    "main.8f96d246.css.map": "/cloudy-goat-webapp/static/css/main.8f96d246.css.map",
+    "main.10150de9.js.map": "/cloudy-goat-webapp/static/js/main.10150de9.js.map",
     "453.4ddbe320.chunk.js.map": "/cloudy-goat-webapp/static/js/453.4ddbe320.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.491ab2a3.css",
-    "static/js/main.db05f95f.js"
+    "static/css/main.8f96d246.css",
+    "static/js/main.10150de9.js"
   ]
 }
