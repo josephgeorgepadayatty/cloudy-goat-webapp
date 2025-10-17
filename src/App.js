@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./App.css";
+import mainLogo from "./media/mainLogo.png";
 
 const tabs = [
   {
@@ -20,9 +21,7 @@ const tabs = [
   },
 ];
 
-// URLs for goat images and GIFs
-const goatGif = "https://media1.tenor.com/m/Tm5lZtOaZ0EAAAAC/goatishere.gif";
-const goatPic = "https://i.pinimg.com/originals/98/f8/c3/98f8c3eb55543229cd87f26dc80aea61.jpg";
+
 
 const tabVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -41,14 +40,19 @@ function App() {
         const nextIndex = (currentIndex + 1) % tabIds.length;
         return tabIds[nextIndex];
       });
-    }, 5000); // Switch tab every 5 seconds
+    }, 15000); // Switch tab every 5 seconds
 
     return () => clearInterval(interval); // Clear on unmount
   }, []);
 
   return (
     <div className="app-container">
-      <h1 className="app-title">Best in Class Innovation For Cloudy the Goat</h1>
+        <img
+      src={mainLogo}
+      alt="Cloudy the Goat Logo"
+      className="corner-logo"
+    />
+      <h1 className="app-title">GREATEST OF ALL TECH</h1>
       <div className="tabs" role="tablist">
         {tabs.map((tab) => (
           <button
@@ -122,20 +126,16 @@ function App() {
 const MulesoftTab = () => (
   <div className="tab-panel">
     <h2>Mulesoft</h2>
-    <motion.img
-      src={goatPic}
-      alt="Goat on snow"
-      className="goat-pic"
-      initial={{ scale: 0.8, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ type: "spring", stiffness: 100 }}
-    />
-    <motion.img
-      src={goatGif}
-      alt="Goat playful GIF"
-      className="goat-gif"
-      animate={{ rotate: [0, 10, -10, 0] }}
-      transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+    <motion.video
+      src={require("./media/Mulesoft Video.mp4")}
+      className="mulesoft-video"
+      autoPlay
+      loop
+      muted
+      playsInline
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     />
   </div>
 );
@@ -143,20 +143,16 @@ const MulesoftTab = () => (
 const AgentforceTab = () => (
   <div className="tab-panel">
     <h2>Agentforce</h2>
-    <motion.img
-      src={goatGif}
-      alt="Goat playful GIF"
-      className="goat-gif"
-      animate={{ x: [0, 15, -15, 0] }}
-      transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-    />
-    <motion.img
-      src={goatPic}
-      alt="Goat on snow"
-      className="goat-pic"
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.3, duration: 0.6 }}
+    <motion.video
+      src={require("./media/Agentforce Video.mp4")}
+      className="agentforce-video"
+      autoPlay
+      loop
+      muted
+      playsInline
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     />
   </div>
 );
@@ -164,21 +160,19 @@ const AgentforceTab = () => (
 const SalesforceTab = () => (
   <div className="tab-panel">
     <h2>Salesforce DevOps Center</h2>
-    <motion.img
-      src={goatPic}
-      alt="Goat on snow"
-      className="goat-pic"
-      whileHover={{ scale: 1.1, rotate: 8 }}
-      transition={{ type: "spring", stiffness: 120 }}
-    />
-    <motion.img
-      src={goatGif}
-      alt="Goat playful GIF"
-      className="goat-gif"
-      animate={{ scale: [1, 1.05, 1, 1.05, 1] }}
-      transition={{ repeat: Infinity, duration: 6 }}
+    <motion.video
+      src={require("./media/Devops Video.mp4")}
+      className="salesforce-video"
+      autoPlay
+      loop
+      muted
+      playsInline
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     />
   </div>
 );
+
 
 export default App;

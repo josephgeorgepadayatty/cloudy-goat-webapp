@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 /* General styling */
 .app-container {
-  font-family: 'Arial', sans-serif;
-  background: #e0f2ff; /* Soft blue background */
+  font-family: 'Roboto', sans-serif;
+  background: #afd6f1; /* Soft blue background */
   color: #103262; /* Dark blue text */
   min-height: 100vh;
   padding: 20px;
@@ -14,6 +15,7 @@
   color: #115293; /* Blue, goat theme accent */
   margin-bottom: 30px;
   font-weight: bold;
+  font-family: 'Roboto';
 }
 
 .tabs {
@@ -92,3 +94,50 @@
 body, .app-container {
   cursor: url(http://www.rw-designer.com/cursor-extern.php?id=119335),auto;
 }
+
+.corner-logo {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 150px;     /* Adjust as preferred */
+  height: 150px;    /* Maintain aspect ratio */
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 10;     /* Keep above other elements */
+}
+
+.app-container {
+  position: relative;
+  /* Add padding if necessary to not overlap logo with content */
+  padding-left: 90px;  /* Adjust based on logo size */
+}
+
+.mulesoft-video {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(17, 82, 147, 0.4);
+  user-select: none;
+}
+
+.agentforce-video {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(17, 82, 147, 0.4);
+  user-select: none;
+}
+.salesforce-video {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(17, 82, 147, 0.4);
+  user-select: none;
+}
+
