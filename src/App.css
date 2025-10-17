@@ -200,3 +200,31 @@ body, .app-container {
     margin: 10px auto;
   }
 }
+.qr-corner {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  z-index: 10;
+}
+
+@media (max-width: 900px) {
+  .qr-corner {
+    width: 64px;
+    height: 64px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .qr-corner {
+    width: 40px;
+    height: 40px;
+    top: 8px;
+    right: 8px;
+  }
+}
+

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import "./App.css";
 import mainLogo from "./media/mainLogo.png";
+import qrImg from "./media/qr.png";
+
 
 const tabs = [
   {
@@ -52,6 +54,11 @@ function App() {
       alt="Cloudy the Goat Logo"
       className="corner-logo"
     />
+     <img
+    src={qrImg}
+    alt="QR Code"
+    className="qr-corner"
+  />
       <h1 className="app-title">GREATEST OF ALL TECH</h1>
       <div className="tabs" role="tablist">
         {tabs.map((tab) => (
