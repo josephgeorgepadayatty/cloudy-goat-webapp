@@ -141,3 +141,62 @@ body, .app-container {
   user-select: none;
 }
 
+@media (max-width: 600px) {
+  .corner-logo {
+    width: 54px;
+    height: 54px;
+    top: 8px;
+    left: 8px;
+  }
+  .app-container {
+    padding-left: 0 !important;
+    padding-top: 70px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+  }
+  .app-title {
+    font-size: 1.1rem;
+    margin-top: 6px;
+    margin-bottom: 18px;
+  }
+  .tabs {
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .tab-button {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    border-radius: 16px;
+    min-width: 68px;
+    gap: 6px;
+  }
+  .tab-logo {
+    height: 18px;
+    width: 18px;
+  }
+  .tab-content {
+    max-width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+  }
+  .tab-panel h2 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  .goat-pic {
+    max-width: 90vw;
+    border-radius: 8px;
+    margin: 8px auto;
+  }
+  .goat-gif {
+    max-width: 45vw;
+    margin: 7px auto;
+  }
+  .mulesoft-video,
+  .agentforce-video,
+  .salesforce-video {
+    max-width: 97vw;
+    border-radius: 8px;
+    margin: 10px auto;
+  }
+}
